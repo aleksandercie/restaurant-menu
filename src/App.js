@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch} from "react-router-dom";
+import Title from './Components/Title/Title';
+import AboutView from './Components/AboutView/AboutView';
+import ContactView from './Components/ContactView/ContactView';
+import Navigation from './Components/Navigation/Navigation';
+import AppetizersListWrapper from './Components/AppetizersListWrapper/AppetizersListWrapper';
+import EntreesListWrapper from './Components/EntreesListWrapper/EntreesListWrapper';
+import DessertsListWrapper from './Components/DessertsListWrapper/DessertsListWrapper';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <BrowserRouter>
+        <>
+          <Title />
+          <Navigation/>
+          <Switch>
+            <Route exact path="/" component={AboutView}/>
+            <Route path="/appetizers" component={AppetizersListWrapper}/>
+            <Route path="/entrees" component={EntreesListWrapper}/>
+            <Route path="/desserts" component={DessertsListWrapper}/>
+            <Route path="/contact" component={ContactView}/>
+          </Switch>
+        </>
+      </BrowserRouter>
+  )
 }
+
 
 export default App;
