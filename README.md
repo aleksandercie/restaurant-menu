@@ -1,6 +1,6 @@
 # Restaurant meni
 ## Demo
-* [Demo version](http://aleksandercie.github.io/quiz)
+* [Demo version](https://aleksandercie.github.io/restaurant-menu)
 ## Technologies
 
 Project is created with:
