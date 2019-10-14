@@ -16,11 +16,11 @@ const App = () => {
           <Title />
           <Navigation/>
           <Switch>
-            <Route exact path="/" component={AboutView}/>
-            <Route path="/appetizers" component={AppetizersListWrapper}/>
-            <Route path="/entrees" component={EntreesListWrapper}/>
-            <Route path="/desserts" component={DessertsListWrapper}/>
-            <Route path="/contact" component={ContactView}/>
+            <Route exact path="http://aleksandercie.github.io/restaurant-menu/" component={AboutView}/>
+            <Route path="http://aleksandercie.github.io/restaurant-menu/appetizers" component={AppetizersListWrapper}/>
+            <Route path="http://aleksandercie.github.io/restaurant-menu/entrees" component={EntreesListWrapper}/>
+            <Route path="http://aleksandercie.github.io/restaurant-menu/desserts" component={DessertsListWrapper}/>
+            <Route path="http://aleksandercie.github.io/restaurant-menu/contact" component={ContactView}/>
           </Switch>
         </>
       </BrowserRouter>
