@@ -1,4 +1,4 @@
-# Restaurant meni
+# Restaurant menu
 ## Demo
 * [Demo version](https://aleksandercie.github.io/restaurant-menu)
 ## Technologies
