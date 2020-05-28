@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import styles from './AboutView.module.scss';
 import TavernImage from '../../image/tavern.jpg';
-import insidePhoto from '../../image/inside2.jpg';
+import insidePhoto from '../../image/inside.jpg';
 import {TweenMax, Power3} from 'gsap';
 
 const AboutView = () => {
