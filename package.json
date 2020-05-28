@@ -2,7 +2,7 @@
   "name": "menu",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://aleksandercie.github.io/restaurant-menu/",
+  "homepage": "http://aleksandercie.github.io/restaurant-menu",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "google-maps-react": "^2.0.2",

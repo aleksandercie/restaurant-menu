@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch} from "react-router-dom";
+import { HashRouter, Route, Switch} from "react-router-dom";
 import Title from './Components/Title/Title';
 import AboutView from './Components/AboutView/AboutView';
 import ContactView from './Components/ContactView/ContactView';
@@ -11,19 +11,19 @@ import DessertsListWrapper from './Components/DessertsListWrapper/DessertsListWr
 
 const App = () => {
   return (
-      <BrowserRouter>
+      <HashRouter>
         <>
           <Title />
           <Navigation/>
           <Switch>
-            <Route exact path="http://aleksandercie.github.io/restaurant-menu/" component={AboutView}/>
-            <Route path="http://aleksandercie.github.io/restaurant-menu/appetizers" component={AppetizersListWrapper}/>
-            <Route path="http://aleksandercie.github.io/restaurant-menu/entrees" component={EntreesListWrapper}/>
-            <Route path="http://aleksandercie.github.io/restaurant-menu/desserts" component={DessertsListWrapper}/>
-            <Route path="http://aleksandercie.github.io/restaurant-menu/contact" component={ContactView}/>
+            <Route exact path="/" component={AboutView}/>
+            <Route path="/appetizers" component={AppetizersListWrapper}/>
+            <Route path="/entrees" component={EntreesListWrapper}/>
+            <Route path="/desserts" component={DessertsListWrapper}/>
+            <Route path="/contact" component={ContactView}/>
           </Switch>
         </>
-      </BrowserRouter>
+      </HashRouter>
   )
 }
 
